@@ -1,9 +1,9 @@
 let image = [
-  "../public/image/img1.jpeg",
-  "../public/image/img2.jpg",
-  "../public/image/img3.jpg",
-  "../public/image/img4.jpg",
-  "../public/image/img5.jpg",
+  "publicStyle/image/img1.jpeg",
+  "publicStyle/image/img2.jpg",
+  "publicStyle/image/img3.jpg",
+  "publicStyle/image/img4.jpg",
+  "publicStyle/image/img5.jpg",
 ];
 
 let textJumbotron = [
