@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bd {
+  background-color: #02022b;
+  height: 2000px;
+}
+
+.navbar-top {
+  width: 100vw;
+  height: 150px;
+  background-color: #19193b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-top .text {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(238, 130, 238, 0.8);
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.navbar-top .line1 .column1 .link {
+  background-color: #4b0082;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navbar-top .link a {
+  border-radius: 5px;
+  padding: 7px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* !!! */
+
+.bd .jumbotron {
+  background-color: #19193b;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.bd .jumbotron .textJumbo {
+  position: relative;
+  color: white;
+}
+
+.bd .jumbotron .textJumbo .animasi {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3d0168;
+  animation: gerak 5s alternate infinite;
+}
+
+.bd .jumbotron .image {
+  position: relative;
+  width: 70%;
+  height: 400px;
+  box-shadow: 0 7px 8px 8px #3d0168;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: url(../image/img1.jpeg);
+  background-position: center -100px;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.bd .jumbotron .image button {
+  background-color: #383838d5;
+  color: white;
+  border-radius: 5px;
+}
+
+.bd .jumbotron .image button:hover {
+  background-color: #4b0082;
+}
+
+.bd .jumbotron .image .left {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.bd .jumbotron .image .right {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+}
+
+.bd .jumbotron .card {
+  width: 50%;
+  background-color: #08082e;
+  border-radius: 20px;
+}
+
+/* !!! */
+
+.bd .content1 {
+  background-color: #19193b;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.bd .content1 .image {
+  animation: contentImg 3s alternate infinite;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-image: url(../image/img1.jpeg);
+  background-position: center;
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+
+.bd .content1 .text {
+  background-color: #02022b;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+
+.bd .content1 .text a {
+  color: white;
+}
+
+/* !!! */
+
+.bd .content2 {
+  background-color: #19193b;
+}
+
+.bd .content2 h2 {
+  color: white;
+}
+
+.bd .content2 .row2 {
+  padding-bottom: 20px;
+}
+
+.bd .content2 .card {
+  background-color: #02022b;
+  padding: 15px;
+  width: 18rem;
+}
+
+.bd .content2 .text {
+  color: white;
+}
+
+/* animation */
+
+@keyframes gerak {
+  0% {
+    top: 5px;
+    left: 0;
+  }
+  25% {
+    background-color: red;
+    top: 5px;
+    left: 97%;
+  }
+  50% {
+    top: 92%;
+    left: 97%;
+  }
+  75% {
+    top: 92%;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes contentImg {
+  0% {
+    transform: rotate(-20deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* responsive */
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 300px;
+    background-size: 100% 300px;
+    background-position: center;
+  }
+
+  .bd .content1 .image {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* handphone */
+
+@media screen and (max-width: 768px) {
+  .navbar-top {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02022b;
+    border: 1px solid white;
+  }
+
+  .navbar-top .text {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(238, 130, 238, 0.8);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  .navbar-top .line1 .column1 .link {
+    border-radius: 5px;
+    width: 140px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-top .link a {
+    padding: 3px 0;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 200px;
+    background-size: 100% 200px;
+    background-position: center;
+    box-shadow: 0 3px 4px 5px #3d0168;
+  }
+
+  .bd .jumbotron .image .left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .bd .jumbotron .image .right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .bd .jumbotron .card {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .bd .content1 .text {
+    font-size: 11px;
+  }
+
+  .bd .content1 .image {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .bd .content2 .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 120px;
+    background-size: 100% 120px;
+    background-position: center center;
+  }
+
+  .bd .jumbotron .image .left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+
+  .bd .jumbotron .image .right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+  }
+
+  .bd .content1 {
+    padding-top: 0;
+  }
+
+  .bd .content1 .image {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .bd .content1 .text {
+    padding: 0;
+  }
+
+  .bd .content2 .text h5 {
+    font-size: 8vw;
+  }
+
+  .bd .content2 .col .card {
+    width: 100%;
+  }
+
+  .bd .content2 .col .card a {
+    width: 100px;
+    font-size: 11px;
+  }
+}
