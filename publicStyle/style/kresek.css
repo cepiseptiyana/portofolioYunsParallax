@@ -70,6 +70,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
   }
 
   .navbar-top .text {
@@ -116,7 +118,7 @@
 
 @media screen and (max-width: 350px) {
   .navbar-top {
-    background-position: -315px center;
+    background-position: center;
   }
 
   #app .location iframe {

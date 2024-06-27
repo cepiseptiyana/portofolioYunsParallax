@@ -67,3 +67,20 @@ left.addEventListener("click", function () {
 right.addEventListener("click", function () {
   slideRight();
 });
+
+// jquery
+$(window).scroll(function () {
+  var scroll = $(this).scrollTop();
+
+  $(".navbar-top .line1").css({
+    transform: "translate(0px, " + scroll / 1.3 + "%)",
+  });
+
+  $(".navbar-top .line1 .text").css({
+    transform: "translate(-" + scroll / 2 + "%, 0px)",
+  });
+
+  $(".navbar-top .line1 .link").css({
+    transform: "translate(" + scroll / 2 + "%, 0px)",
+  });
+});
