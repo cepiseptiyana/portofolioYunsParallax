@@ -19,6 +19,14 @@
   </head>
   <body class="bd">
     <div id="app">
+      <!-- Light Box -->
+      <div class="LightBox">
+        <div class="img">
+          <img id="imageLightBox" src="publicStyle/image/img1.jpeg" alt="" />
+          <div class="close">&#x2716;</div>
+        </div>
+      </div>
+
       <div class="navbar-top container-fluid">
         <div class="row line1">
           <div class="col column1">
@@ -47,36 +55,42 @@
               style="display: flex; justify-content: center; flex-wrap: wrap"
             >
               <img
+                id="thumb"
                 src="publicStyle/image/img4.jpg"
                 alt=""
                 class="thumb"
                 data-aos="flip-left"
               />
               <img
+                id="thumb"
                 src="publicStyle/image/img6.jpg"
                 alt=""
                 class="thumb"
                 data-aos="flip-up"
               />
               <img
+                id="thumb"
                 src="publicStyle/image/skm1.jpg"
                 alt=""
                 class="thumb"
                 data-aos="flip-down"
               />
               <img
+                id="thumb"
                 src="publicStyle/image/skm2.jpg"
                 alt=""
                 class="thumb"
                 data-aos="flip-up"
               />
               <img
+                id="thumb"
                 src="publicStyle/image/skm3.jpg"
                 alt=""
                 class="thumb"
                 data-aos="flip-down"
               />
               <img
+                id="thumb"
                 src="publicStyle/image/skm4.jpg"
                 alt=""
                 class="thumb"
@@ -121,12 +135,28 @@
 
     <!-- my script -->
     <script type="module">
+      // Scrolling Text Parallax
       $(window).scroll(function () {
         var scroll = $(this).scrollTop();
 
         $(".navbar-top .line1").css({
           transform: "translate(0px, " + scroll / 1.2 + "%)",
         });
+      });
+
+      // Light Box
+      document.addEventListener("click", function (event) {
+        const parentimageLightBox =
+          document.getElementsByClassName("LightBox")[0];
+        const imageLightBox = document.getElementById("imageLightBox");
+        if (event.target.id === "thumb") {
+          parentimageLightBox.style.transform = "scale(1)";
+          imageLightBox.src = `${event.target.currentSrc}`;
+        } else {
+          if (event.target.className === "close") {
+            parentimageLightBox.style.transform = "scale(0)";
+          }
+        }
       });
     </script>
 

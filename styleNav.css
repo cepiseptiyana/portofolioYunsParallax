@@ -75,26 +75,27 @@
   margin: auto;
 }
 
+.bd .jumbotron .image .left {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+
+.bd .jumbotron .image .right {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+}
+
 .bd .jumbotron .image button {
-  background-color: #383838d5;
+  padding: 10px;
+  background-color: #6508a7;
   color: white;
   border-radius: 5px;
 }
 
 .bd .jumbotron .image button:hover {
   background-color: #4b0082;
-}
-
-.bd .jumbotron .image .left {
-  position: absolute;
-  top: 50%;
-  left: -30px;
-}
-
-.bd .jumbotron .image .right {
-  position: absolute;
-  top: 50%;
-  right: -50px;
 }
 
 .bd .jumbotron .card {
@@ -266,23 +267,31 @@
   }
 
   .bd .jumbotron .image {
-    width: 90%;
+    width: 70%;
     height: 200px;
     background-size: 100% 200px;
     background-position: center;
     box-shadow: 0 3px 4px 5px #3d0168;
   }
 
+  /* SLIDE  */
+  .bd .jumbotron .image button {
+    padding: 5px;
+    background-color: #6508a7;
+    color: white;
+    border-radius: 5px;
+  }
+
   .bd .jumbotron .image .left {
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 40%;
+    left: -10%;
   }
 
   .bd .jumbotron .image .right {
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 40%;
+    right: -10%;
   }
 
   .bd .jumbotron .card {
@@ -309,6 +318,27 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .bd .jumbotron .image button {
+    padding: 3px;
+    background-color: #6508a7;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .bd .jumbotron .image .left {
+    position: absolute;
+    top: 40%;
+    left: -18%;
+  }
+
+  .bd .jumbotron .image .right {
+    position: absolute;
+    top: 40%;
+    right: -18%;
+  }
+}
+
 @media screen and (max-width: 300px) {
   .bd .jumbotron .image {
     width: 90%;
@@ -320,13 +350,13 @@
   .bd .jumbotron .image .left {
     position: absolute;
     top: 40%;
-    left: 0;
+    left: -10%;
   }
 
   .bd .jumbotron .image .right {
     position: absolute;
     top: 40%;
-    right: 0;
+    right: -10%;
   }
 
   .bd .content1 {

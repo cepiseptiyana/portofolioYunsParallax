@@ -1,3 +1,50 @@
+/* Light Box */
+.LightBox {
+  position: fixed;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+}
+
+.LightBox .img {
+  position: relative;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.LightBox .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.LightBox .close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  top: -5%;
+  right: -5%;
+  background-color: #4b0082;
+  transition: 0.2s;
+}
+
+.LightBox .close:hover {
+  background-color: #36005c;
+}
+
+/*  */
+/*  */
+
 .bd {
   background-color: #02022b;
   height: 2000px;
@@ -61,6 +108,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Light Box */
+  .LightBox .img {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
   .navbar-top {
     width: 100vw;
     height: 100vh;
@@ -117,7 +172,20 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  /* Light Box */
+  .LightBox .img {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 350px) {
+  /* Light Box */
+  .LightBox .close {
+    width: 25px;
+    height: 25px;
+  }
+
   #app .location iframe {
     width: 100%;
     height: 200px;
