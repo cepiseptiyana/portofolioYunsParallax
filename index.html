@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- parallax css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>.bd {
+  background-color: #02022b;
+  height: 2000px;
+}
+
+.navbar-top {
+  width: 100vw;
+  height: 150px;
+  background-color: #19193b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navbar-top .text {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(238, 130, 238, 0.8);
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.navbar-top .line1 .column1 .link {
+  background-color: #4b0082;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navbar-top .link a {
+  border-radius: 5px;
+  padding: 7px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* !!! */
+
+.bd .jumbotron {
+  background-color: #19193b;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.bd .jumbotron .textJumbo {
+  position: relative;
+  color: white;
+}
+
+.bd .jumbotron .textJumbo .animasi {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3d0168;
+  animation: gerak 5s alternate infinite;
+}
+
+.bd .jumbotron .image {
+  position: relative;
+  width: 70%;
+  height: 400px;
+  box-shadow: 0 7px 8px 8px #3d0168;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: url(publicStyle/image/img1.jpeg);
+  background-position: center -100px;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.bd .jumbotron .image button {
+  background-color: #383838d5;
+  color: white;
+  border-radius: 5px;
+}
+
+.bd .jumbotron .image button:hover {
+  background-color: #4b0082;
+}
+
+.bd .jumbotron .image .left {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.bd .jumbotron .image .right {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+}
+
+.bd .jumbotron .card {
+  width: 50%;
+  background-color: #08082e;
+  border-radius: 20px;
+}
+
+/* !!! */
+
+.bd .content1 {
+  background-color: #19193b;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.bd .content1 .image {
+  animation: contentImg 3s alternate infinite;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-image: url(publicStyle/image/img1.jpeg);
+  background-position: center;
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+
+.bd .content1 .text {
+  background-color: #02022b;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+
+.bd .content1 .text a {
+  color: white;
+}
+
+/* !!! */
+
+.bd .content2 {
+  background-color: #19193b;
+}
+
+.bd .content2 h2 {
+  color: white;
+}
+
+.bd .content2 .row2 {
+  padding-bottom: 20px;
+}
+
+.bd .content2 .card {
+  background-color: #02022b;
+  padding: 15px;
+  width: 18rem;
+}
+
+.bd .content2 .text {
+  color: white;
+}
+
+/* animation */
+
+@keyframes gerak {
+  0% {
+    top: 5px;
+    left: 0;
+  }
+  25% {
+    background-color: red;
+    top: 5px;
+    left: 97%;
+  }
+  50% {
+    top: 92%;
+    left: 97%;
+  }
+  75% {
+    top: 92%;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes contentImg {
+  0% {
+    transform: rotate(-20deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* responsive */
+
+/* tablet */
+
+@media screen and (max-width: 1024px) {
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 300px;
+    background-size: 100% 300px;
+    background-position: center;
+  }
+
+  .bd .content1 .image {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* handphone */
+
+@media screen and (max-width: 768px) {
+  .navbar-top {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02022b;
+    border: 1px solid white;
+  }
+
+  .navbar-top .text {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(238, 130, 238, 0.8);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  .navbar-top .line1 .column1 .link {
+    border-radius: 5px;
+    width: 150px;
+    padding: 2px 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-top .link a {
+    padding: 3px 0;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 200px;
+    background-size: 100% 200px;
+    background-position: center;
+    box-shadow: 0 3px 4px 5px #3d0168;
+  }
+
+  .bd .jumbotron .image .left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .bd .jumbotron .image .right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .bd .jumbotron .card {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .bd .content1 .text {
+    font-size: 11px;
+  }
+
+  .bd .content1 .image {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .bd .content2 .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bd .jumbotron .image {
+    width: 90%;
+    height: 120px;
+    background-size: 100% 120px;
+    background-position: center center;
+  }
+
+  .bd .jumbotron .image .left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+
+  .bd .jumbotron .image .right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+  }
+
+  .bd .content1 {
+    padding-top: 0;
+  }
+
+  .bd .content1 .image {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .bd .content1 .text {
+    padding: 0;
+  }
+
+  .bd .content2 .text h5 {
+    font-size: 8vw;
+  }
+
+  .bd .content2 .col .card {
+    width: 100%;
+  }
+
+  .bd .content2 .col .card a {
+    width: 100px;
+    font-size: 11px;
+  }
+}
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script type="module" crossorigin src="/assets/index-BTnJxtB_.js"></script>
+  </head>
+  <body class="bd">
+    <div id="app">
+      <div class="navbar-top container-fluid">
+        <div class="row line1">
+          <div class="col column1">
+            <h1 class="text" data-aos="fade-down">komunitas Yun's</h1>
+            <div class="link" data-aos="fade-up">
+              <a href="index.html">home</a>
+              <a href="">docs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container jumbotron">
+        <div class="row">
+          <div class="col">
+            <h2
+              class="text-center"
+              style="
+                color: rgb(238, 130, 238, 0.8);
+                text-shadow: 0 0 10px rgb(0, 0, 0);
+              "
+              data-aos="fade-right"
+            >
+              Senam Bersama Perwosi Kab.Tangerang
+            </h2>
+            <div class="image">
+              <button class="left">kiri</button>
+              <button class="right">kanan</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card mb-3 m-auto mt-5">
+            <div class="card-body textJumbo" data-aos="fade-up">
+              <div class="animasi"></div>
+              <h2 class="card-title head" style="text-transform: capitalize">
+                klik geser untuk menampilkan text
+              </h2>
+              <p
+                class="card-text paragraph1"
+                style="text-transform: capitalize"
+              >
+                klik geser untuk menampilkan text pada foto
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container content1 mt-3">
+        <div class="row">
+          <div class="col-sm m-auto">
+            <div class="image"></div>
+          </div>
+          <div class="col-sm text">
+            <h2>lokasi sanggar senam<br />yun's studio</h2>
+            <p>
+              click =
+              <a
+                href="https://www.google.com/maps/place/V94Q%2BF84,+Renged,+Kec.+Kresek,+Kabupaten+Tangerang,+Banten/@-6.1438571,106.3834572,17z/data=!3m1!4b1!4m9!1m2!2m1!1sV94Q%2BF84+Renged,+Kabupaten+Tangerang,+Banten+(Ruko+depan+PDAM)+KRESEK,+KAB.+TANGERANG,+BANTEN,+ID,+15620!3m5!1s0x2e41f87e10997f1d:0x463cceb7930fe2f7!8m2!3d-6.1438625!4d106.3883281!15sCmhWOTRRK0Y4NCBSZW5nZWQsIEthYnVwYXRlbiBUYW5nZXJhbmcsIEJhbnRlbiAoUnVrbyBkZXBhbiBQREFNKSBLUkVTRUssIEtBQi4gVEFOR0VSQU5HLCBCQU5URU4sIElELCAxNTYyMJIBEGdlb2NvZGVkX2FkZHJlc3PgAQA?entry=ttu"
+                >V94Q+F84 Renged, Kabupaten Tangerang, Banten (Ruko depan PDAM)
+                KRESEK, KAB. TANGERANG, BANTEN, ID, 15620</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container content2 mt-3">
+        <div class="row">
+          <div class="col text-center">
+            <h2 data-aos="fade-right">Lokasi Senam</h2>
+          </div>
+        </div>
+        <div class="row row2" style="gap: 20px; text-align: center">
+          <div class="col">
+            <div class="card m-auto">
+              <img
+                src="publicStyle/image/img6.jpg"
+                class="card-img-top"
+                alt="sukamulya"
+              />
+              <div class="card-body text">
+                <h5 class="card-title">kecamatan sukamulya</h5>
+                <p class="card-text">sukamulya</p>
+                <a href="sukamulya.html" class="btn btn-primary"
+                  >lihat lengkap</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-auto">
+              <img
+                src="publicStyle/image/img7.jpg"
+                class="card-img-top"
+                alt="kresek"
+              />
+              <div class="card-body text">
+                <h5 class="card-title">kecamatan kresek</h5>
+                <p class="card-text">kresek</p>
+                <a href="kresek.html" class="btn btn-primary">lihat lengkap</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-auto">
+              <img
+                src="/publicStyle/image/img8.jpg"
+                class="card-img-top"
+                alt="stadion"
+              />
+              <div class="card-body text">
+                <h5 class="card-title">stadion mini talok</h5>
+                <p class="card-text">senam stadion mini</p>
+                <a href="stadionTalok.html" class="btn btn-primary"
+                  >lihat lengkap</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card m-auto">
+              <img
+                src="publicStyle/image/img9.jpg"
+                class="card-img-top"
+                alt="sanggar"
+              />
+              <div class="card-body text">
+                <h5 class="card-title">sanggar senam yuns</h5>
+                <p class="card-text">sanggar senam yun's studio</p>
+                <a href="sanggar.html" class="btn btn-primary">lihat lengkap</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- my script -->
+    <!-- parallax js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
