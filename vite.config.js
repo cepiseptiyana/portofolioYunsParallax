@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 export default defineConfig({
-  //   base: "/portofolioYunsParallax/",
+  base: "/portofolioYunsParallax/",
   build: {
     outDir: "production",
   },

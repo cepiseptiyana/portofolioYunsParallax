@@ -118,6 +118,7 @@
   margin: auto;
   background-image: url(publicStyle/image/img1.jpeg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -216,11 +217,6 @@
   .bd .content1 .image {
     width: 90%;
     height: 200px;
-    margin: auto;
-    margin-bottom: 20px;
-    background-position: center;
-    background-size: 300px 200px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -300,12 +296,7 @@
 
   .bd .content1 .image {
     width: 100%;
-    height: 200px;
-    margin: auto;
-    margin-bottom: 50px;
-    background-position: center;
-    background-size: 300px 200px;
-    background-repeat: no-repeat;
+    height: 500px;
   }
 
   .bd .content2 .text {
@@ -344,13 +335,13 @@
   .bd .jumbotron .image .left {
     position: absolute;
     top: 40%;
-    left: -10%;
+    left: -5%;
   }
 
   .bd .jumbotron .image .right {
     position: absolute;
     top: 40%;
-    right: -10%;
+    right: -5%;
   }
 
   .bd .content1 {
@@ -360,11 +351,6 @@
   .bd .content1 .image {
     width: 100%;
     height: 150px;
-    margin: auto;
-    margin-bottom: 30px;
-    background-position: center;
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
   }
 
   .bd .content1 .text {
