@@ -39,7 +39,7 @@
   text-decoration: none;
 }
 
-/* !!! */
+/* jumbotron */
 
 .bd .jumbotron {
   background-color: #19193b;
@@ -63,14 +63,13 @@
 
 .bd .jumbotron .image {
   position: relative;
-  width: 70%;
-  height: 400px;
+  width: 50%;
+  height: 500px;
   box-shadow: 0 7px 8px 8px #3d0168;
   border: 1px solid black;
   border-radius: 10px;
   background-image: url(publicStyle/image/img1.jpeg);
-  background-position: center -100px;
-  background-size: 100% 500px;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
 }
@@ -104,7 +103,7 @@
   border-radius: 20px;
 }
 
-/* !!! */
+/* content-1 */
 
 .bd .content1 {
   background-color: #19193b;
@@ -119,7 +118,6 @@
   margin: auto;
   background-image: url(publicStyle/image/img1.jpeg);
   background-position: center;
-  background-size: 400px 300px;
   background-repeat: no-repeat;
 }
 
@@ -137,7 +135,7 @@
   color: white;
 }
 
-/* !!! */
+/* contet-2 */
 
 .bd .content2 {
   background-color: #19193b;
@@ -210,9 +208,8 @@
 /* tablet */
 @media screen and (max-width: 1024px) {
   .bd .jumbotron .image {
-    width: 90%;
-    height: 300px;
-    background-size: 100% 300px;
+    width: 50%;
+    height: 500px;
     background-position: center;
   }
 
@@ -266,12 +263,10 @@
     text-decoration: none;
   }
 
+  /* Jumbotron */
   .bd .jumbotron .image {
-    width: 70%;
-    height: 200px;
-    background-size: 100% 200px;
-    background-position: center;
-    box-shadow: 0 3px 4px 5px #3d0168;
+    width: 50%;
+    height: 400px;
   }
 
   /* SLIDE  */
@@ -319,6 +314,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .bd .jumbotron .image {
+    width: 80%;
+    height: 300px;
+    background-position: center;
+  }
+
   .bd .jumbotron .image button {
     padding: 3px;
     background-color: #6508a7;
@@ -339,14 +340,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
-  .bd .jumbotron .image {
-    width: 90%;
-    height: 120px;
-    background-size: 100% 120px;
-    background-position: center center;
-  }
-
+@media screen and (max-width: 320px) {
   .bd .jumbotron .image .left {
     position: absolute;
     top: 40%;

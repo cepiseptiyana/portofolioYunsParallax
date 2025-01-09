@@ -19,6 +19,14 @@
   </head>
   <body class="bd">
     <div id="app">
+      <!-- Light Box -->
+      <div class="LightBox">
+        <div class="img">
+          <img id="imageLightBox" src="publicStyle/image/img1.jpeg" alt="" />
+          <div class="close">&#x2716;</div>
+        </div>
+      </div>
+
       <div class="navbar-top container-fluid">
         <div class="row line1">
           <div class="col column1">
@@ -48,18 +56,21 @@
               <img
                 src="publicStyle/image/img8.jpg"
                 alt=""
+                id="thumb"
                 class="thumb"
                 data-aos="flip-down"
               />
               <img
                 src="publicStyle/image/talok1.jpg"
                 alt=""
+                id="thumb"
                 class="thumb"
                 data-aos="zoom-in-up"
               />
               <img
                 src="publicStyle/image/talok2.jpg"
                 alt=""
+                id="thumb"
                 class="thumb"
                 data-aos="flip-left"
               />
@@ -108,6 +119,21 @@
         $(".navbar-top .line1").css({
           transform: "translate(0px, " + scroll / 1.2 + "%)",
         });
+      });
+
+      // Light Box
+      document.addEventListener("click", function (event) {
+        const parentimageLightBox =
+          document.getElementsByClassName("LightBox")[0];
+        const imageLightBox = document.getElementById("imageLightBox");
+        if (event.target.id === "thumb") {
+          parentimageLightBox.style.transform = "scale(1)";
+          imageLightBox.src = `${event.target.currentSrc}`;
+        } else {
+          if (event.target.className === "close") {
+            parentimageLightBox.style.transform = "scale(0)";
+          }
+        }
       });
     </script>
 

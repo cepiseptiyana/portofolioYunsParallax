@@ -16,6 +16,7 @@
 .LightBox .img {
   position: relative;
   width: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
 }
@@ -23,6 +24,7 @@
 .LightBox .img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .LightBox .close {
@@ -40,6 +42,7 @@
 
 .LightBox .close:hover {
   background-color: #36005c;
+  cursor: pointer;
 }
 
 /*  */
@@ -95,7 +98,8 @@
 }
 
 #app .gallery .row2 img {
-  width: 200px;
+  width: 20%;
+  height: 170px;
 }
 
 #app .gallery .row2 .container {
@@ -112,9 +116,13 @@
   .LightBox .img {
     position: relative;
     width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
   }
+
+  /*  */
+  /*  */
 
   .navbar-top {
     width: 100vw;
@@ -159,6 +167,7 @@
 
   #app .gallery .row2 img {
     width: 100%;
+    height: 50%;
   }
 
   #app .gallery .imgLight .jumbo {
@@ -175,7 +184,8 @@
 @media screen and (max-width: 500px) {
   /* Light Box */
   .LightBox .img {
-    width: 70%;
+    width: 80%;
+    height: 25%;
   }
 }
 
