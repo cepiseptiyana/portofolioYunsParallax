@@ -127,6 +127,7 @@
   padding: 30px;
   color: white;
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-transform: capitalize;
   border-radius: 20px;
